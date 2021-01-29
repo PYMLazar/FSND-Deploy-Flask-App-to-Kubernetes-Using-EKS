@@ -26,7 +26,8 @@ def test_health(client):
     response = client.get('/')
     assert response.status_code == 200
     assert response.json == 'Healthy'
-    assert False
+    #Comment just for test purposes-- assert false
+    #assert False
 
 
 def test_auth(client):
